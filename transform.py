@@ -26,14 +26,6 @@ def transform(image):
     newImage = [pixels[index:index+newWidth] for index in range(0, pixelsNum, newWidth)]
     return '\n'.join(newImage)
 
-def run(path):
-    image = None
-    image = transform(path)
-    print(image)
-    f = open('img.txt','w')
-    f.write(image)
-    f.close()
-
 if __name__ == "__main__":
     pass
     img = Image.open("person.jpg")
