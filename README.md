@@ -7,3 +7,9 @@ This program requires pip3 pre-installed and as well as the Pillow module
 pip3 install Pillow
 
 pip3 install image
+
+# Execution
+Type this command in any terminal
+``` bash
+python3 transform.py
+```
