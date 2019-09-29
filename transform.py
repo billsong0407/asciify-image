@@ -28,7 +28,7 @@ def transform(image):
 
 if __name__ == "__main__":
     pass
-    img = Image.open("person.jpg")
+    img = Image.open("family.jpg")
     image = transform(img)
     print(image)
     f = open('img.txt','w')
