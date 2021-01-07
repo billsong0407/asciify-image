@@ -1,5 +1,7 @@
 from PIL import Image
+import sys
 
+# Global constants
 ASCII_CHARS = ['.',',',':',';','+','*','?','%','S','#','@']
 ASCII_CHARS = ASCII_CHARS[::-1]
 newWidth = 100
@@ -27,10 +29,9 @@ def transform(image):
     return '\n'.join(newImage)
 
 if __name__ == "__main__":
-    pass
-    img = Image.open("family.jpg")
+    filename = sys.argv[1]
+    img = Image.open(filename)
     image = transform(img)
-    print(image)
     f = open('img.txt','w')
     f.write(image)
     f.close()
