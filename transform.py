@@ -32,6 +32,6 @@ if __name__ == "__main__":
     filename = sys.argv[1]
     img = Image.open(filename)
     image = transform(img)
-    f = open('img.txt','w')
+    f = open('output.txt','w')
     f.write(image)
     f.close()
